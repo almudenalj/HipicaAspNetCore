@@ -1,0 +1,195 @@
+﻿@{
+    ViewData["Title"] = "About";
+}
+<!DOCTYPE html>
+<html lang="zxx" class="no-js">
+<head>
+    <!-- Mobile Specific Meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Favicon-->
+    <link rel="shortcut icon" href="img/fav.png">
+    <!-- Author Meta -->
+    <meta name="author" content="codepixer">
+    <!-- Meta Description -->
+    <meta name="description" content="">
+    <!-- Meta Keyword -->
+    <meta name="keywords" content="">
+    <!-- meta character set -->
+    <meta charset="UTF-8">
+    <!-- Site Title -->
+    <title>Horse Club</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet">
+    <!--
+    CSS
+    ============================================= -->
+    <link href="~/css/linearicons.css" rel="stylesheet" />
+    <link href="~/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="~/css/bootstrap.css" rel="stylesheet" />
+    <link href="~/css/magnific-popup.css" rel="stylesheet" />
+    <link href="~/css/nice-select.css" rel="stylesheet" />
+    <link href="~/css/animate.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link href="~/css/owl.carousel.css" rel="stylesheet" />
+    <link href="~/css/main.css" rel="stylesheet" />
+</head>
+<body>
+
+    <header id="header" id="home">
+        <div class="container">
+            <div class="row header-top align-items-center">
+                <div class="col-lg-4 col-sm-4 menu-top-left">
+                    <a href="mailto:info@horseclub.com"><span class="lnr lnr-location"></span></a>
+                    <a class="tel" href="mailto:info@horseclub.com">info@clubhipico.com</a>
+                </div>
+                <div class="col-lg-4 menu-top-middle justify-content-center d-flex">
+                    <a href="index.html">
+                        <img class="img-fluid" src="img/logo.png" alt="">
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-4 menu-top-right">
+                    <a class="tel" href="tel:+880 123 12 658 439">+925 123 45 67</a>
+                    <a href="tel:+880 123 12 658 439"><span class="lnr lnr-phone-handset"></span></a>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="container">
+            <div class="row align-items-center justify-content-center d-flex">
+                <nav id="nav-menu-container">
+                    <ul class="nav-menu">
+                        <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                        <li>@Html.ActionLink("Reserva", "ReservaPorNivel", "Nivel")</li>
+                        <li>@Html.ActionLink("Niveles", "Index", "Nivel")</li>
+                        <li>@Html.ActionLink("Caballos", "Index", "Caballo")</li>
+                        <li>@Html.ActionLink("Monitores", "Index", "Monitor")</li>
+                        <li>@Html.ActionLink("Rutas", "Index", "Ruta")</li>
+                        <li>@Html.ActionLink("Mis Reservas", "Index", "Reserva")</li>
+                        <li>@Html.ActionLink("Login", "Login", "Validacion")</li>
+                        <li>@Html.ActionLink("Registrar", "Registrar", "Validacion")</li>
+
+                    </ul>
+                </nav><!-- #nav-menu-container -->
+            </div>
+        </div>
+    </header><!-- #header -->
+    <!-- start banner Area -->
+    <section class="banner-area relative" id="home">
+        <div class="overlay overlay-bg"></div>
+        <div class="container">
+            <div class="row d-flex align-items-center justify-content-center">
+                <div class="about-content col-lg-12">
+                    <h1 class="text-white">
+                        Sobre Nosotros
+                    </h1>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End banner Area -->
+    <!-- Start home-about Area -->
+    <section class="home-about-area section-gap">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 home-about-left">
+                    <img class="mx-auto d-block img-fluid" />
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3072.541599720683!2d-4.492201884627637!3d39.63752407946342!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd6a8c1a85017d1f%3A0xee4e5568c306e264!2sClub+H%C3%ADpico+San+Juan!5e0!3m2!1ses!2ses!4v1551284333789" width="600" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+                <div class="col-lg-6 home-about-right">
+                    <h6 class="text-uppercase">Reserva tu ruta y ven a conocernos</h6>
+                    <h1>
+                        Los Montes de Toledo <br>
+                        y Cabañeros como entorno
+                    </h1>
+                    <p>
+                        <span>Nos daptamos a cualquier nivel</span>
+                    </p>
+                    <p>
+                        Bienvenidos a nuestro Centro Hípico en Navahermosa. Montes de Toledo. Nos dedicamos a la equitación, paseos a caballo, ocio y otras actividades al aire libre.
+
+                        Cuidamos al máximo cada detalle, nuestros servicios de formación, de ocio o de espectáculo son realizados por personal especializado y certificado en cada disciplina.
+
+                        Instalaciones homologadas para la práctica de la equitación en todas sus disciplinas. Salones para la celebración de eventos y reuniones. Vestuarios, servicio de alquiler de equipamiento, bar con terraza de verano, área de naturaleza con especies autóctonas recuperadas, etc…
+                    </p>
+                    <a class="primary-btn" href="https://localhost:44309/Ruta">Nuestras Rutas</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End home-about Area -->
+    <!-- Start feature Area -->
+    <section class="feature-area relative pt-100 pb-20">
+        <div class="overlay overlay-bg"></div>
+        <div class="container">
+            <div class="row align-items-center justify-content-center">
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-feature">
+                        <a href="#"><h4 class="text-white">Jinetes con gran experiencia</h4></a>
+                        <p>
+                            Preparados para cualquier ruta, clase o situación. Con una larga experiencia en técnica
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-feature">
+                        <a href="#"><h4 class="text-white">Servicio Profesional</h4></a>
+                        <p>También contamos con todos los servicios para el pupilaje, doma y cuidado de tu caballo</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-feature">
+                        <a href="#"><h4 class="text-white">Soporte 365 dias</h4></a>
+                        <p>
+                            Nuestro servicio de veterinario está disponible los 365 dias del año
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-feature">
+                        <a href="#"><h4 class="text-white">Entorno</h4></a>
+                        <p>
+                            Gracias al entorno que nos rodea: Los Montes de Toledo, podrás disfrutar de diferentes rutas orientadas a cualquier nivel de experiencia
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-feature">
+                        <a href="#"><h4 class="text-white">Nuestros alumnos nos avalan</h4></a>
+                        <p>
+                            Son muchos años impartiendo clase de doma clasica, doma vaquera e iniciacion a la equitación. Por nuestra escuela ya han pasado 200 alumnos
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-feature">
+                        <a href="#"><h4 class="text-white">Equipamiento</h4></a>
+                        <p>
+                            Contamos con lo ultimo en intalaciones de cuadras para tu caballo. Box completos, con comederos y bebederos individuales. Limpieza todos los dias
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="~/js/vendor/jquery-2.2.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="~/js/vendor/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhOdIF3Y9382fqJYt5I_sswSrEw5eihAA"></script>
+    <script src="~/js/easing.min.js"></script>
+    <script src="~/js/hoverIntent.js"></script>
+    <script src="~/js/superfish.js"></script>
+    <script src="~/js/jquery.ajaxchimp.min.js"></script>
+    <script src="~/js/jquery.magnific-popup.min.js"></script>
+    <script src="~/js/owl.carousel.min.js"></script>
+    <script src="~/js/jquery.sticky.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="~/js/jquery.nice-select.min.js"></script>
+    <script src="~/js/parallax.min.js"></script>
+    <script src="~/js/waypoints.min.js"></script>
+    <script src="~/js/jquery.counterup.min.js"></script>
+    <script src="~/js/mail-script.js"></script>
+    <script src="~/js/main.js"></script>
+</body>
+</html>

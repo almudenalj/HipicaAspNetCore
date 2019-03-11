@@ -1,0 +1,35 @@
+﻿
+@{
+    ViewData["Title"] = "Registrar";
+}
+
+<h2>Validación de usuario</h2>
+<form method="post">
+    <div>
+        <label>Nombre: </label>
+        <input type="text" name="Nombre" class="form-control" />
+    </div>
+    <div>
+        <label>Apellidos: </label>
+        <input type="text" name="Apellidos" class="form-control" />
+    </div>
+    <div>
+        <label>Teléfono: </label>
+        <input type="number" name="Telefono" class="form-control" />
+    </div>
+    <div>
+        <label>Email: </label>
+        <input type="email" name="Email" class="form-control" />
+    </div>
+    <div>
+        <label>Password: </label>
+        <input type="password" name="Password" class="form-control" />
+    </div>
+    <br />
+    <div>
+        <button type="submit" class="btn-success">Registrar</button>
+    </div>
+</form>
+<h2 style="color:red">
+    @ViewBag.Mensaje
+</h2>

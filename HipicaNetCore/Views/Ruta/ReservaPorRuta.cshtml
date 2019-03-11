@@ -1,0 +1,24 @@
+﻿
+@{
+    ViewData["Title"] = "ReservaPorRuta";
+}
+
+<h2>Rutas</h2>
+
+<div class="row">
+    @foreach (var ruta in Model)
+    {
+        <div class="col-md-4">
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="@ruta.Ruta_Imagen" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">@ruta.Nombre</h5>
+                    <p>Duración: @ruta.Duracion h</p>
+                    <p>Precio: @ruta.Precio €</p>
+                    <p class="card-text">@ruta.Descripcion</p>
+                    @Html.ActionLink("Seleccionar Ruta", "ReservaFinal", "Reserva", new { IdRuta = ruta.Id }, new  { @class="btn btn-primary"} ) 
+                </div>
+            </div>
+        </div>
+    }
+</div>

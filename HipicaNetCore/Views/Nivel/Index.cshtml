@@ -1,0 +1,144 @@
+﻿@model IEnumerable<HipicaNetCore.Models.Nivel>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+    
+    <!DOCTYPE html>
+    <html lang="zxx" class="no-js">
+    <head>
+        <!-- Mobile Specific Meta -->
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!-- Favicon-->
+        <link rel="shortcut icon" href="img/fav.png">
+        <!-- Author Meta -->
+        <meta name="author" content="codepixer">
+        <!-- Meta Description -->
+        <meta name="description" content="">
+        <!-- Meta Keyword -->
+        <meta name="keywords" content="">
+        <!-- meta character set -->
+        <meta charset="UTF-8">
+        <!-- Site Title -->
+        <title>Club Hípico</title>
+
+        <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet">
+        <!--
+        CSS
+        ============================================= -->
+        <link href="~/Views/Caballo/css/linearicons.css" rel="stylesheet" />
+        <link href="~/Views/Caballo/css/font-awesome.min.css" rel="stylesheet" />
+        <link href="~/Views/Caballo/css/bootstrap.css" rel="stylesheet" />
+        <link href="~/Views/Caballo/css/magnific-popup.css" rel="stylesheet" />
+        <link href="~/Views/Caballo/css/nice-select.css" rel="stylesheet" />
+        <link href="~/Views/Caballo/css/animate.min.css" rel="stylesheet" />>
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+        <link href="~/Views/Caballo/css/owl.carousel.css" rel="stylesheet" />
+        <link href="~/Views/Caballo/css/main.css" rel="stylesheet" />
+    </head>
+    <body>
+        <header id="header" id="home">
+            <div class="container">
+                <div class="row header-top align-items-center">
+                    <div class="col-lg-4 col-sm-4 menu-top-left">
+                        <a href="mailto:info@horseclub.com"><span class="lnr lnr-location"></span></a>
+                        <a class="tel" href="mailto:info@horseclub.com">info@clubhipico.com</a>
+                    </div>
+                    <div class="col-lg-4 menu-top-middle justify-content-center d-flex">
+                        <a href="index.html">
+                            <img class="img-fluid" src="img/logo.png" alt="">
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-sm-4 menu-top-right">
+                        <a class="tel" href="tel:+880 123 12 658 439">+925123456</a>
+                        <a href="tel:+880 123 12 658 439"><span class="lnr lnr-phone-handset"></span></a>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="container">
+                <div class="row align-items-center justify-content-center d-flex">
+                    <nav id="nav-menu-container">
+                        <ul class="nav-menu">
+                            <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                            <li>@Html.ActionLink("Reserva", "ReservaPorNivel", "Nivel")</li>
+                            <li>@Html.ActionLink("Niveles", "Index", "Nivel")</li>
+                            <li>@Html.ActionLink("Caballos", "Index", "Caballo")</li>
+                            <li>@Html.ActionLink("Monitores", "Index", "Monitor")</li>
+                            <li>@Html.ActionLink("Rutas", "Index", "Ruta")</li>
+                            <li>@Html.ActionLink("Mis Reservas", "Index", "Reserva")</li>
+                            <li>@Html.ActionLink("Login", "Login", "Validacion")</li>
+                            <li>@Html.ActionLink("Registrar", "Registrar", "Validacion")</li>
+
+                        </ul>
+                    </nav><!-- #nav-menu-container -->
+                </div>
+            </div>
+        </header><!-- #header -->
+        <!-- start banner Area -->
+        <section class="feature-area relative" id="home">
+            <div class="overlay overlay-bg"></div>
+            <div class="container">
+                <div class="row d-flex align-items-center justify-content-center">
+                    <div class="about-content col-lg-12">
+                        <h1 class="text-white">
+                            Selecciona tu nivel
+                        </h1>
+                        <p class="text-white link-nav"><a href="index.html">Home </a>  <span class="lnr lnr-arrow-right"></span>  <a href="service.html"> Registrate</a></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End banner Area -->
+        <!-- Start service-page Area -->
+
+
+        <section class="service-page-area section-gap">
+            <div class="container">
+                <div class="row d-flex justify-content-center">
+                    <div class="col-md-9 pb-40 header-text text-center">
+                        <h1 class="pb-10">Para todos los niveles</h1>
+                        <p>¿Cual prefieres? </p>
+                    </div>
+                </div>
+                <div class="row">
+                    @foreach (var nivel in Model)
+                    {
+                        <div class="col-lg-4 col-md-6">
+                            <div class="single-service-page">
+                                <div class="thumbs relative">
+                                    <div class="overlay-bg"></div>
+                                    <img class="card-img-top" src="@nivel.Ruta_Imagen" alt="" width="500" height="300">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Nivel @nivel.Nombre </h5>
+                                        <p class="card-text">@nivel.Descripcion</p>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    }
+                    
+</section>
+
+        <script src="~/Views/Caballo/js/vendor/jquery-2.2.4.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="~/Views/Caballo/js/vendor/bootstrap.min.js"></script>
+        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhOdIF3Y9382fqJYt5I_sswSrEw5eihAA"></script>
+        <script src="~/Views/Caballo/js/easing.min.js"></script>
+        <script src="~/Views/Caballo/js/hoverIntent.js"></script>
+        <script src="~/Views/Caballo/js/superfish.js"></script>
+        <script src="~/Views/Caballo/js/jquery.ajaxchimp.min.js"></script>
+        <script src="~/Views/Caballo/js/jquery.magnific-popup.min.js"></script>
+        <script src="~/Views/Caballo/js/owl.carousel.min.js"></script>
+        <script src="~/Views/Caballo/js/jquery.sticky.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <script src="~/Views/Caballo/js/jquery.nice-select.min.js"></script>
+        <script src="~/Views/Caballo/js/parallax.min.js"></script>
+        <script src="~/Views/Caballo/js/waypoints.min.js"></script>
+        <script src="~/Views/Caballo/js/jquery.counterup.min.js"></script>
+        <script src="~/Views/Caballo/js/mail-script.js"></script>
+        <script src="~/Views/Caballo/js/main.js"></script>
+    </body>
+</html>
